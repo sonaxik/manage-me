@@ -33,18 +33,25 @@ Dane przechowywane są w `localStorage` przeglądarki — nie jest wymagane żad
 ## Struktura projektu
 
 ```
-src/
-├── api/                  # Warstwa serwisów (mock API via localStorage)
-│   ├── ProjectService.ts
-│   ├── StoryService.ts
-│   ├── TaskService.ts
-│   └── UserService.ts
-├── types/                # Modele danych (interfejsy TypeScript)
-│   ├── Project.ts
-│   ├── Story.ts
-│   ├── Task.ts
-│   └── User.ts
-├── App.tsx               # Główny komponent aplikacji (cały widok)
-├── main.tsx              # Punkt wejściowy React
-└── index.css             # Globalne style
+manage-me-react/
+├── src/
+│   ├── api/                     # Warstwa serwisów (mock API via localStorage)
+│   │   ├── NotificationService.ts
+│   │   ├── ProjectService.ts
+│   │   ├── StoryService.ts
+│   │   ├── TaskService.ts
+│   │   └── UserService.ts
+│   ├── types/                   # Modele danych (interfejsy TypeScript)
+│   │   ├── Notification.ts
+│   │   ├── Project.ts
+│   │   ├── Story.ts
+│   │   ├── Task.ts
+│   │   └── User.ts
+│   ├── App.tsx                  # Główny komponent aplikacji (cały widok)
+│   ├── main.tsx                 # Punkt wejściowy React
+│   └── index.css                # Globalne style
+├── index.html                   # Szablon HTML
+├── vite.config.ts               # Konfiguracja Vite
+├── tsconfig.json                # Konfiguracja TypeScript
+└── package.json                 # Zależności i skrypty
 ```
